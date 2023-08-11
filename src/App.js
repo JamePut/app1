@@ -1,15 +1,14 @@
 import React from 'react';
+import { Header, Content, Footer } from './func-components'
+import Calendar from './class-components'
 import './style.css';
 function App() {
   return(
         <>
-        <div className='box'>
-          <span className='borderLine'>
-            <form>
-              <h1> DeveloperThai.com </h1>
-            </form>
-          </span>
-        </div>
+        <Header/>
+        <p><br/><center><Calendar/></center><br/></p>
+        <Content/>
+        <Footer/>
         </>
   ) 
 }
