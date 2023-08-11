@@ -1,13 +1,19 @@
 import React from 'react';
-import { Header, Content, Footer } from './func-components'
-import Calendar from './class-components'
+import { Header, Content, Footer } from './func-components';
+import Calendar from './class-components';
+import './App.css';
+import logo from './logo.svg';
 import './style.css';
+
 function App() {
   return(
         <>
         <Header/>
-        <p><br/><center><Calendar/></center><br/></p>
+        <h1><br/><center><Calendar/></center><br/></h1>
         <Content/>
+        <center>
+        <img src={logo} className="App-logo" alt="logo"/>
+        </center>
         <Footer/>
         </>
   ) 
