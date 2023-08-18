@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-export default class Calendar extends Component {
+export class Calendar extends Component {
     getDate() {
         const dayNames = ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์']
         const monthNames = ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน',
@@ -19,5 +19,17 @@ export default class Calendar extends Component {
     }
 }
 
-
+export class Button extends Component {
+    showAlert(msg) {
+        alert(msg)
+    }
+    onClickButtonOK = () => { //Event Handler แบบ Arrow Function
+        this.showAlert('Hello') //ใช้ this ได้เลย โดยไม่เกิดปัญหา
+    }
+    render() {
+        return <button onClick={this.onClickButtonOK}>
+        OK</button>
+    }
+}
+        
     

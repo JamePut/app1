@@ -1,10 +1,14 @@
 import React from 'react';
 import { Header, Content, Footer } from './func-components';
-import Calendar from './class-components';
+import {Calendar} from './class-components';
 import './App.css';
 import logo from './logo.svg';
 import './style.css';
 import Banner from './banner'
+import {Button} from './class-components';
+import {Calculator} from './calculator';
+import {Calculator2} from './calculator';
+
 
 
 function App() {
@@ -16,9 +20,16 @@ function App() {
         <center>
         <img src={logo} className="App-logo" alt="logo"/>
         </center>
-        <Footer/>
         <Banner/>
-        
+        <center>
+          <Button/>
+          <br/>
+          <Calculator/>
+          <br/>
+          <Calculator2/>
+          <br/>
+        </center>
+        <Footer/>
         </>
   ) 
 }
