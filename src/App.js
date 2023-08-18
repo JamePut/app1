@@ -4,6 +4,8 @@ import Calendar from './class-components';
 import './App.css';
 import logo from './logo.svg';
 import './style.css';
+import Banner from './banner'
+
 
 function App() {
   return(
@@ -15,6 +17,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo"/>
         </center>
         <Footer/>
+        <Banner/>
+        
         </>
   ) 
 }
