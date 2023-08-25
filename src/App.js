@@ -11,13 +11,15 @@ import {Calculator2} from './calculator';
 import {EventData2} from './event-data';
 import {Table} from './event-data';*/
 import RefsFunc from './refs-func';
-
+import RefsArray from './refs-array';
 
 function App() {
   return(
         <>
         <center>
           <RefsFunc/>
+          <br/>
+          <RefsArray/>
           <br/>
         </center>
         </>
