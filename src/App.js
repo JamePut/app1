@@ -22,11 +22,9 @@ function App() {
         <>
         <userContext.Provider value={'Tom Jerry'}>
         <Header/>
-        </userContext.Provider>
-
-        <userContext.Provider value={'Tom Jerry'}>
         <Content/>
         </userContext.Provider>
+
         </>
   ) 
 }
