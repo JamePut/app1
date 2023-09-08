@@ -9,22 +9,24 @@ import {Button} from './class-components';
 import {Calculator} from './calculator';
 import {Calculator2} from './calculator';
 import {EventData2} from './event-data';
-import {Table} from './event-data';*/
+import {Table} from './event-data';
 import RefsFunc from './refs-func';
 import RefsArray from './refs-array';
-import MessageBox from './state-func';
+import MessageBox from './state-func';*/
+import { userContext } from './context';
+import Header from './context-header';
+import Content from './context-content';
 
 function App() {
   return(
         <>
-        <center>
-          <RefsFunc/>
-          <br/>
-          <RefsArray/>
-          <br/>
-          <MessageBox/>
-          <br/>
-        </center>
+        <userContext.Provider value={'Tom Jerry'}>
+        <Header/>
+        </userContext.Provider>
+
+        <userContext.Provider value={'Tom Jerry'}>
+        <Content/>
+        </userContext.Provider>
         </>
   ) 
 }
