@@ -17,13 +17,15 @@ import { userContext } from './context';
 import Header from './context-header';
 import Content from './context-content';
 import Header2 from './context-header2';
-import Content2 from './context-content2';*/
+import Content2 from './context-content2';
 import Router2 from "./router2";
-import Router3 from './router3';
+import Router3 from './router3';*/
+import FormBootstrap from './form-bootstrap';
+import FormText from './form-text';
 
 export function App() {
   return(
-    <Router3/>
+    <FormText/>
   )
 }
 
