@@ -23,10 +23,11 @@ import Router3 from './router3';*/
 import FormBootstrap from './form-bootstrap';
 import FormText from './form-text';
 import FormCheck from './form-check';
+import FormValidation from './form-validation';
 
 export function App() {
   return(
-    <FormCheck/>
+    <FormValidation/>
   )
 }
 
